@@ -1,6 +1,6 @@
 import React from 'react'
 import '../Footer/Footer.css'
-
+import { Link } from 'react-router-dom'
 const Footer = () => {
   return (
     <footer class="footer-distributed">
@@ -27,11 +27,11 @@ const Footer = () => {
         <p class="footer-links">
           <a class="link-1" href='#'>Home</a> 
 
-         <a href='#'> Pricing </a>
+         <Link to='/cart'> CartContent </Link>
 
-          <a href="#">About us</a>
+          <Link to="/about">About us</Link>
 
-         <a href="#">Contact</a>
+         <Link to="/contact">Contact</Link> 
         </p>
 
         <p>Plants for Everybody &copy; 2023</p>

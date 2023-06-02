@@ -5,7 +5,8 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import DataProvider from "./components/context/DataContext";
 import Error404 from "./Error404";
 import { Form } from "./components/Form";
-
+import ContactForm from "./ContactForm/ContactForm";
+import Aboutus from "./About us/Aboutus";
 import './App.css'
 
 function App() {
@@ -17,9 +18,11 @@ function App() {
     <DataProvider>
       <BrowserRouter>
         <Routes>
-          <Route path="/" element={<Home />}> </Route>
-          <Route path="/cart" element={<CartContent />} />
-          <Route path="*" element={<Error404 />}></Route>
+          <Route exact path="/" element={<Home />}></Route>
+          <Route exact path="/cart" element={<CartContent />} />
+          <Route exact path="/contact" element={<ContactForm/>}></Route>
+          <Route exact path="/about" element={<Aboutus/>}></Route>
+          <Route path="*" element={<Error404/>}></Route>
         </Routes>
       </BrowserRouter>
     </DataProvider>
