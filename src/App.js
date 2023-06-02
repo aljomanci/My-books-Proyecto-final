@@ -5,8 +5,8 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import DataProvider from "./components/context/DataContext";
 import Error404 from "./Error404";
 import { Form } from "./components/Form";
-import './App.css'
 
+import './App.css'
 
 function App() {
 
